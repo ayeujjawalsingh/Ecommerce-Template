@@ -286,7 +286,7 @@ nav .content .links{
 #home::before{ 
   content: "";
   position: absolute;
-  background: url('image/backgroud.jpg') no-repeat center center/cover;
+  background: url('../image/backgroud.jpg') no-repeat center center/cover;
   height: 400px;
   top:48px;
   left:0px;
