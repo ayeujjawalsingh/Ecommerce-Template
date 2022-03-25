@@ -253,12 +253,11 @@ nav .content .links{
 
 #logos 
 {
-    /* margin: auto 500px; */
-    padding: 15px 70px;
+    width: 98vw;
+    margin: auto;
+    /* overflow-x: scroll; */
     display: flex;
-    margin-left: 3%;
-    /* margin-top: 2%; */
-    /* flex-direction: row; */
+    justify-content: center;
     background-color: transparent;
 }
 
@@ -266,11 +265,11 @@ nav .content .links{
 {  
     margin: auto 10px;
     border-radius: 1px;
-    padding: 4px 4px;
+    /* padding: 4px 4px; */
     background-color: rgb(0, 0, 0);
-    margin-top: 60px;
-    width:  100%;
-    margin-bottom: 15px;
+    margin-top: 70px;
+    /* width:  10%; */
+    margin-bottom: 10px;
 }
 
 
@@ -278,7 +277,7 @@ nav .content .links{
 #home{
   display: flex;
   flex-direction: column;
-  padding:3px 70px;
+  /* padding:3px 70px; */
   height: 400px;
   justify-content: center;
   /* align-items: center; */
@@ -296,12 +295,16 @@ nav .content .links{
 }
 
 #home h1{
-  color:rgb(167, 167, 167);
-  text-shadow: 2px 2px 4px rgb(214, 142, 142);
+  width: 40vw;
+  margin: auto;
+  /* margin: 80px 40px; */
+  color: rgb(202 202 202);
+  text-shadow: 2px 2px 100px rgb(0, 0, 0);
   text-align: center;
-  font-family: serif;
-  font-size: 3.1rem;
-  /* padding: 12px; */
+  /* font-family: serif; */
+  font-size: 2.5rem;
+  /* padding: 0px 60px; */
+  margin-top: 150px;
 }
 
 
@@ -319,10 +322,10 @@ nav .content .links{
 }
 
 .h-heading{
-  font-family: serif;
-  font-size: 2.1rem;
-  padding: 12px;
-  background-color: #b9f3f3;
+  /* font-family: serif; */
+  font-size: 1.8rem;
+  padding: 2px;
+  background-color: #8cdaab;
 }
 
 .btn2
@@ -348,6 +351,7 @@ nav .content .links{
 
 #products-content 
       {
+        overflow-x: auto;
           margin-top: 1%;
           display: flex;
           flex-direction: row;
@@ -428,6 +432,7 @@ nav .content .links{
 
 /* Client Section */
 #client-section{ 
+  height: 34vh;
   position: relative;
 }
 
@@ -442,26 +447,26 @@ nav .content .links{
 }
 .h-head{
   font-family: cursive;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   padding: 12px;
   color: white;
 }
 
 #clients{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.client-item{
+/* .client-item{
   padding: 34px;
   
-}
+} */
 
 #clients img{
-  width: 100px;
-  margin-left: 5px;
-  margin-right:  5px;
+  width: 10vw;
+  /* margin-left: 5px;
+  margin-right:  5px; */
 }
 
 
@@ -505,11 +510,31 @@ nav .content .links{
 
 /* Footer Section */
 footer {
+  height: 40px;
+  display: flex;
   background: white;
   color: black;
-  padding: 9px 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width : 900px) {
-  
+@media (max-width : 1350px) {
+  #home h1{
+    width: 60vw;
+    margin-top: 120px;
+  }
+  #logos{
+    width: 95vw;
+    overflow-x: scroll;
+    justify-content: space-between;
+  }
+  #client-section{ 
+    height: 30vh;
+  }
+}
+@media (max-width : 800px) {
+  #client-section{ 
+    height: 22vh;
+  }
 }
